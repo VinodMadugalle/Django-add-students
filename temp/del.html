@@ -1,0 +1,9 @@
+{% extends 'home.html'%}
+{% block content%}
+
+<form action="" method="POST">
+    {%csrf_token%}
+    <a href="{% url 'studentapp' %}">Go Back</a>
+    <input type="submit" value="Delete">
+</form>
+{% endblock content%}
